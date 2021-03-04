@@ -1,4 +1,27 @@
-from cmath import sqrt
+from math import sqrt
+
+#Teste
+def teste():
+    if p1_distance(1,1,1,1) != 0:
+        raise ValueError
+
+    if p2_double([1,2,2,3,4,6]) != 2:
+        raise ValueError
+
+    if p2_double([1,2,3,3,4,6]) != 3:
+        raise ValueError
+
+    if p3_last("Ana are mere si pere") != "si":
+        raise ValueError
+
+    if p3_last("Ana are pere si xan") != "xan":
+        raise ValueError
+
+    if len(p4_uniques("ana are ana are pere mere")) != 2:
+        raise ValueError
+
+    if len(p4_uniques("ana are ana are mere")) != 1:
+        raise ValueError
 
 #Distanta Euclidiana dintre 2 puncte.
 def p1():
@@ -95,4 +118,4 @@ def p5():
     print(str(max_key) + ":" + str(max_value))
 
 
-p5()
+teste()
